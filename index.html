@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/mystyles.css">
 </head>
+
 <body>
-    <h1>Dom Example</h1>
-    <p id="demo">Original Message</p>
-    <button id="myBtn">Click Me</button>
-    <div id="result"></div>
-    
-    <script src="./scripts/domExample.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <main>
+        <section id="list">A</section>
+        <section id="form">
+            <div class="mb-3">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control" id="inputTitle">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <textarea rows="3" class="form-control" id="inputDescription"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Color</label>
+                <div class="color-input-container">
+                    <input type="color" id="inputColor">
+                </div>
+            </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Start Date</label>
+                <input type="datetime-local" class="form-control" id="inputDate">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select id="inputStatus">
+                    <option value="">Select</option>
+                    <option>New</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                    <option>Cancelled</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Budget</label>
+                <input type="number" class="form-control" id="inputBudget">
+            </div>
+            <button class="btn btn-dark" type="submit" id="btnSave">Save Task</button>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./scripts/app.js"></script>
 </body>
+
 </html>
