@@ -1,6 +1,6 @@
 # 📋 Task Management Dashboard
 
-A modern priority-based task management application featuring glassmorphism design, intelligent sorting, and comprehensive validation. Built with vanilla JavaScript and modular CSS architecture.
+A modern priority-based task management application featuring glassmorphism design, intelligent sorting, and comprehensive validation. Built with JavaScript ES6+ and modular CSS architecture.
 
 ## 🛠️ Technologies
 
