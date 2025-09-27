@@ -1,0 +1,175 @@
+/* ================================================================
+   FORMS.CSS - Form Controls & Input Styling
+   Task Management Dashboard
+   ================================================================ */
+
+/* Form field labels */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #e6e6fa;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: none;
+    cursor: default;
+}
+
+/* General form control styling for inputs and selects */
+.form-control, #inputStatus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 20px !important;
+    color: antiquewhite !important;
+    padding: 12px 20px !important;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.2),
+        inset 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Form control hover effects */
+.form-control:hover, #inputStatus:hover {
+    background: rgba(255, 255, 255, 0.13) !important;
+    border-color: rgba(147, 51, 234, 0.5) !important;
+    transform: translateY(-1px);
+    box-shadow: 
+        0 6px 20px rgba(147, 51, 234, 0.3),
+        inset 0 1px 3px rgba(255, 255, 255, 0.15);
+}
+
+/* Form control focus effects */
+.form-control:focus, #inputStatus:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(147, 51, 234, 0.8) !important;
+    box-shadow: 
+        0 0 20px rgba(147, 51, 234, 0.4),
+        inset 0 1px 3px rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-2px);
+}
+
+/* Placeholder text styling */
+.form-control::placeholder {
+    color: rgba(250, 235, 215, 0.6) !important;
+}
+
+/* Color picker container */
+.color-input-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+/* Color picker input specific styling */
+#inputColor {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.3),
+        inset 0 1px 3px rgba(255, 255, 255, 0.2);
+}
+
+#inputColor:hover {
+    transform: scale(1.05);
+    border-color: rgba(147, 51, 234, 0.8) !important;
+    box-shadow: 
+        0 6px 20px rgba(147, 51, 234, 0.4),
+        inset 0 1px 3px rgba(255, 255, 255, 0.3);
+}
+
+#inputColor:focus {
+    border-color: rgba(147, 51, 234, 0.8) !important;
+    box-shadow: 
+        0 0 20px rgba(147, 51, 234, 0.4),
+        inset 0 1px 3px rgba(255, 255, 255, 0.2) !important;
+    outline: none !important;
+}
+
+/* Select dropdown specific styling - improved visibility */
+#inputStatus, #inputPriority {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23FAEBD7' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+#inputStatus option, #inputPriority option {
+    background-color: #2d1b69 !important;
+    color: antiquewhite !important;
+    padding: 8px 12px;
+}
+
+/* Enhanced focus state for better visibility */
+#inputPriority:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(147, 51, 234, 0.9) !important;
+    box-shadow: 
+        0 0 25px rgba(147, 51, 234, 0.5),
+        inset 0 1px 3px rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-2px);
+}
+
+/* Form validation - error styling */
+.form-control.error, #inputStatus.error {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 15px rgba(220, 53, 69, 0.4) !important;
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Success message styling and animation */
+.success-message {
+    background: linear-gradient(145deg, rgba(40, 167, 69, 0.9), rgba(32, 201, 151, 0.9));
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    animation: slideIn 0.5s ease;
+}
+
+/* Form field containers with floating bubble effects */
+.mb-3 {
+    position: relative;
+    margin-bottom: 2rem !important;
+}
+
+.mb-3::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+    opacity: 0.6;
+}
+
+.mb-3:nth-child(odd)::before {
+    animation-delay: -1s;
+    left: -10px;
+    right: auto;
+}
+
+.mb-3:nth-child(3n)::before {
+    animation-delay: -2s;
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,47 @@
+/* ================================================================
+   ANIMATIONS.CSS - All Keyframe Animations
+   Task Management Dashboard
+   ================================================================ */
+
+/* Primary bubble animation - used for larger decorative elements */
+@keyframes bubble1 {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px) scale(1);
+        opacity: 0.7;
+    }
+    50% { 
+        transform: translateY(-20px) translateX(10px) scale(1.1);
+        opacity: 1;
+    }
+}
+
+/* Secondary bubble animation - used for smaller decorative elements */
+@keyframes bubble2 {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px) scale(1);
+        opacity: 0.5;
+    }
+    50% { 
+        transform: translateY(15px) translateX(-15px) scale(0.9);
+        opacity: 0.8;
+    }
+}
+
+/* Shimmer effect for primary button - creates moving light effect */
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Slide in animation for success messages */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

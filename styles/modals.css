@@ -1,0 +1,161 @@
+/* ================================================================
+   MODALS.CSS - Themed Modal Components
+   Task Management Dashboard
+   ================================================================ */
+
+/* Main modal container with gradient background */
+.themed-modal {
+    background: linear-gradient(145deg, 
+        rgba(72, 61, 139, 0.95) 0%, 
+        rgba(75, 0, 130, 0.9) 50%, 
+        rgba(25, 25, 112, 0.95) 100%);
+    border: 1px solid rgba(147, 51, 234, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        inset 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Modal header styling */
+.themed-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 25px 15px;
+}
+
+.themed-modal .modal-title {
+    color: #e6e6fa;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal body styling */
+.themed-modal .modal-body {
+    color: rgba(250, 235, 215, 0.9);
+    padding: 20px 25px;
+    line-height: 1.6;
+}
+
+/* Modal footer styling */
+.themed-modal .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 25px 20px;
+}
+
+/* Modal close button */
+.themed-modal .btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.themed-modal .btn-close:hover {
+    opacity: 1;
+}
+
+/* Modal form controls - inputs within modals */
+.themed-modal .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: antiquewhite;
+    padding: 10px 15px;
+}
+
+.themed-modal .form-control:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(147, 51, 234, 0.8);
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.4);
+}
+
+.themed-modal .form-label {
+    color: #e6e6fa;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Modal text styling */
+.themed-modal .text-warning {
+    color: #ffc107 !important;
+}
+
+.themed-modal .text-muted {
+    color: rgba(250, 235, 215, 0.7) !important;
+}
+
+/* Modal button styling - Primary */
+.themed-modal .btn-primary {
+    background: linear-gradient(145deg, #4a00e0, #8e2de2);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.themed-modal .btn-primary:hover {
+    background: linear-gradient(145deg, #5a10f0, #9e3df2);
+    transform: translateY(-2px);
+}
+
+/* Modal button styling - Secondary (adjusted for modal context) */
+.themed-modal .btn-secondary {
+    border-radius: 12px !important;
+    padding: 10px 20px !important;
+    width: auto !important;
+}
+
+/* Modal button styling - Warning */
+.themed-modal .btn-warning {
+    background: linear-gradient(145deg, rgba(147, 51, 234, 0.9), rgba(139, 69, 193, 0.9));
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.themed-modal .btn-warning:hover {
+    background: linear-gradient(145deg, rgba(147, 51, 234, 1), rgba(139, 69, 193, 1));
+    transform: translateY(-2px);
+}
+
+/* Modal button styling - Danger */
+.themed-modal .btn-danger {
+    background: linear-gradient(145deg, #dc3545, #c82333);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+.themed-modal .btn-danger:hover {
+    background: linear-gradient(145deg, #e85463, #d52a3a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
+}
+
+/* Task preview in delete confirmation modal */
+.themed-modal .task-preview {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.themed-modal .task-preview strong {
+    color: #e6e6fa;
+    font-size: 16px;
+}
+
+.themed-modal .task-preview small {
+    color: rgba(250, 235, 215, 0.8) !important;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
