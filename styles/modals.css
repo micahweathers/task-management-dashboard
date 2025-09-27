@@ -75,7 +75,7 @@
 
 /* Modal text styling */
 .themed-modal .text-warning {
-    color: #ffc107 !important;
+    color: rgba(220, 53, 69, 0.8) !important;
 }
 
 .themed-modal .text-muted {
